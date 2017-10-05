@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ayush.paytmdevchallenge.MainActivity">
+
+    <Spinner
+        android:padding="32dp"
+        android:id="@+id/spinner"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:imeOptions="actionGo"
+        android:id="@+id/editText"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="16dp"
+        android:text="1"
+        android:layout_marginTop="32dp"
+        android:layout_toStartOf="@+id/spinner"
+        android:layout_alignParentEnd="true" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/spinner"
+        android:id="@+id/gridView"
+        android:numColumns="auto_fit"
+        android:gravity="center"
+        android:columnWidth="50dp"
+        android:stretchMode="columnWidth"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/spinner"
+        android:layout_marginStart="30dp"
+        android:text="OK" />
+
+</RelativeLayout>
